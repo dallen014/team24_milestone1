@@ -1,9 +1,7 @@
-altair==5.0.1
-matplotlib==3.8.0
 nba_api==1.4.1
 numpy==1.26.3
 openpyxl==3.0.10
 pandas==2.1.4
+plotly==5.18.0
 python==3.12.1
-seaborn==0.12.2
 statsmodels==0.14.0

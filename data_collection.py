@@ -112,6 +112,7 @@ def get_analysis_df(batch_size,df_ids):
                                                   ascending=[True, False])
     all_career_filtered = all_career_stat[all_career_stat['SEASON'] != 2024]
     all_career_grouped = all_career_filtered.groupby('PLAYER_ID').head(5)
+
     agg_df = all_career_grouped.groupby('PLAYER_ID').agg({'GP': 'sum', 
                                                           'GS': 'sum',
                                                           'MIN': 'sum', 
