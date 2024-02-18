@@ -31,7 +31,7 @@ def get_contract_data():
     raw_contracts['Last_Name'] = raw_contracts['Player'].str.split(n=1).str[1]
     raw_contracts = raw_contracts.drop(columns=['Player'])
     contract_df = raw_contracts.rename(columns={'2023-24': 'Current_Contract'})
-    contract_df = contract_df.drop(index= 386)
+    contract_df = contract_df.drop(index= 387)
 
     return contract_df
 
